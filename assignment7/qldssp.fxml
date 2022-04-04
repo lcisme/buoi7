@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment7.DemoQLSP">
+   <children>
+      <Text fill="#d11fd1" layoutX="224.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập thông tin sản phẩm" textAlignment="CENTER" wrappingWidth="352.205078125">
+         <font>
+            <Font name="Bradley Hand ITC" size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ten" layoutX="261.0" layoutY="149.0" prefHeight="39.0" prefWidth="278.0" promptText="Tên sản phẩm" />
+      <TextField fx:id="gia" layoutX="261.0" layoutY="234.0" prefHeight="39.0" prefWidth="278.0" promptText="Giá tiền" />
+      <TextField fx:id="donvi" layoutX="261.0" layoutY="323.0" prefHeight="39.0" prefWidth="278.0" promptText="Đơn vị" />
+      <TextField fx:id="soluong" layoutX="261.0" layoutY="419.0" prefHeight="39.0" prefWidth="278.0" promptText="Số lượng" />
+      <Button layoutX="262.0" layoutY="476.0" mnemonicParsing="false" onAction="#nhaptt" prefHeight="39.0" prefWidth="102.0" text="Nhập">
+         <textFill>
+            <LinearGradient endX="0.3054187192118226" endY="1.0" startX="0.1477832512315271" startY="0.4778325123152709">
+               <stops>
+                  <Stop color="#b221db" />
+                  <Stop color="#802867" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Text fill="#cd1111" fx:id="loi" layoutX="262.0" layoutY="556.0"  visible="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Lỗi rồi " textAlignment="CENTER" wrappingWidth="102.0" />
+      <Button layoutX="443.0" layoutY="476.0" mnemonicParsing="false" onAction="#xemsp" prefHeight="39.0" prefWidth="102.0" text="Xem SP">
+         <textFill>
+            <LinearGradient endX="0.3054187192118226" endY="1.0" startX="0.1477832512315271" startY="0.4778325123152709">
+               <stops>
+                  <Stop color="#b221db" />
+                  <Stop color="#802867" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</Pane>
